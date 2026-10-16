@@ -1,0 +1,27 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Scala and SBT Build Artifacts
+.scala-build/
+.bsp/
+target/
+project/target/
+project/project/
+*.class
+
+# Logs and Runtime Artifacts
+*.log
+spark-warehouse/
+metastore_db/
+checkpoint/
+.checkpoint/
+scratch/
+

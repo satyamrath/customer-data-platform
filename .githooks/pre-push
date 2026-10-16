@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Runs test suite locally before pushing to remote
+
+set -euo pipefail
+
+# Run test suite if sbt is installed locally
+if command -v sbt &>/dev/null; then
+  echo "Running local test suite before push..."
+  (cd code && sbt test)
+fi
+
+exit 0
